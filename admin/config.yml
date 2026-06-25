@@ -1,0 +1,112 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: content/uploads
+public_folder: /uploads
+locale: fr
+site_url: https://domainedesprepresses.fr
+collections:
+- name: logements
+  label: Logements
+  label_singular: Logement
+  folder: content/properties
+  create: false
+  slug: '{{slug}}'
+  identifier_field: name
+  extension: md
+  format: yaml-frontmatter
+  fields:
+  - label: Identifiant (ne pas modifier)
+    name: slug
+    widget: hidden
+  - label: Couleur (technique)
+    name: accent
+    widget: hidden
+  - label: ID Beds24 (technique)
+    name: beds24_propid
+    widget: hidden
+  - label: Pôle
+    name: pole
+    widget: select
+    options:
+    - Nîmes
+    - Beaucaire
+    - Les Angles
+  - label: Nom du logement
+    name: name
+    widget: string
+  - label: Accroche
+    name: tagline
+    widget: string
+  - label: 'Caractéristiques (4 max : voyageurs, chambres, etc.)'
+    name: specs
+    widget: list
+    max: 4
+  - label: Équipements
+    name: amenities
+    widget: list
+    label_singular: Équipement
+    summary: '{{fields.label}}'
+    fields:
+    - label: Équipement
+      name: label
+      widget: string
+    - label: Icône
+      name: icon
+      widget: select
+      options:
+      - Climatisation
+      - Wifi
+      - Cuisine
+      - Lave-linge
+      - TV
+      - Douche
+      - Arrivée autonome
+      - Centre-ville
+      - Lit
+      - Canapé
+      - Café
+      - Étage
+      - Linge fourni
+      - Salle d'eau
+      - Lave-vaisselle
+      - Stationnement rue
+      - Gare à pied
+      - Vélos
+      - Piscine
+      - Jardin
+      - Parking privé
+      - Barbecue
+      - Piscine (2)
+      - Capacité
+      - Grand parc
+      - Vélo
+      - Barbecue (2)
+      - Parking
+      - Réception
+      - Vue
+      - Terrasse
+      - Défaut
+      default: Défaut
+  - label: Adresse
+    name: adresse
+    widget: string
+    required: false
+  - label: 'Points d''intérêt (ex : Arènes — 5 min)'
+    name: points
+    widget: list
+    required: false
+  - label: Note sur la localisation
+    name: disclaimer
+    widget: text
+    required: false
+  - label: Photos (glisser pour réordonner — la 1re est la couverture)
+    name: photos
+    widget: list
+    field:
+      label: Photo
+      name: image
+      widget: image
+  - label: Description
+    name: body
+    widget: markdown
