@@ -65,26 +65,24 @@ Découvrez l'atmosphère unique du centre ville d'une ville méditerranéenne en
 
 Idéalement situé pour tout faire à pieds, ce cocon de 40m² est très confortable et calme (ruelle piétonne).
 
-SI LE LOGEMENT EST COMPLET, SVP CLIQUEZ SUR NOTRE PROFIL AIRBNB (CLIQUEZ SUR NOTRE PHOTO DE PROFIL) POUR DECOUVRIR NOS AUTRES SUPERBES HEBERGEMENTS.
-
 Le logement
 Situé à 2 mn à pieds des halles de Nîmes et du centre commercial La Coupole, des magnifiques jardins de la fontaine, de la maison carrée, etc.
 A 5 mn à pieds des Arènes, du nouveau musée de la romanité.
 A 12 mn à pieds de la gare ferroviaire. Nombreux stationnements possibles.
 
 Vous profiterez :
-- d'un séjour  avec tv écran plat 108cm, d'internet en WiFi, d'une chaîne Hi Fi avec cable jack pour pouvoir écouter votre musique, d'une cuisine très bien équipée avec lave linge, frigo, micro onde, four, plaques vitro céramiques etc. Les amateurs de café trouveront une cafetière à capsule Nescafé Dolce Gusto.
-Le canapé est convertible pour une 3 ème personne.
 
-- d'une chambre climatisée, lumineuse avec un grand lit de qualité de 160x200 cm ainsi que des rangements. Le lit est fait à l'arrivée (couette), le linge de maison est inclus (draps, 1 grande serviette/pers, essuie mains...).
-- d'une salle de bain avec une spacieuse douche à l'italienne, un sèche serviettes, un sèche cheveux etc. Shampoing/savon ne sont pas fournis.
+* d'un séjour  avec tv écran plat 108cm, d'internet en WiFi, d'une chaîne Hi Fi avec cable jack pour pouvoir écouter votre musique, d'une cuisine très bien équipée avec lave linge, frigo, micro onde, four, plaques vitro céramiques etc. Les amateurs de café trouveront une cafetière à capsule Nescafé Dolce Gusto.
+  Le canapé est convertible pour une 3 ème personne.
+* d'une chambre climatisée, lumineuse avec un grand lit de qualité de 160x200 cm ainsi que des rangements. Le lit est fait à l'arrivée (couette), le linge de maison est inclus (draps, 1 grande serviette/pers, essuie mains...).
+* d'une salle de bain avec une spacieuse douche à l'italienne, un sèche serviettes, un sèche cheveux etc. Shampoing/savon ne sont pas fournis.
 
 L'appartement est situé dans un petit immeuble au calme au 1er étage sans ascenseur. Il donne sur une rue piétonne dans le centre ville de Nîmes. On peut tout visiter à pieds.
 
-- Ménage : 30 € à régler sur place.
-- Nombreux stationnements possibles à 2 mn à pieds gratuits ou payants (45€/sem, 18€/24h).
-- Bus à 50 m ligne 10, tramway T1 arrêt Gambetta Coupole
-- Nous acceptons les chèques vacances.
+* Ménage : 30 € à régler sur place.
+* Nombreux stationnements possibles à 2 mn à pieds gratuits ou payants (45€/sem, 18€/24h).
+* Bus à 50 m ligne 10, tramway T1 arrêt Gambetta Coupole
+* Nous acceptons les chèques vacances.
 
 Accès des voyageurs
 Les voyageurs ont accès à la totalité de l'appartement
