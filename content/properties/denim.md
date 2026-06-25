@@ -58,6 +58,7 @@ photos:
   - uploads/denim-5.jpg
   - uploads/denim-6.jpg
   - uploads/denim-7.jpg
+  - /uploads/appartement-nîmes-26.jpg
   - /uploads/award-denim-2022.png
 ---
 Découvrez l'atmosphère unique du centre ville d'une ville méditerranéenne en séjournant dans ce bel appartement tout juste rénové.
