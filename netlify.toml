@@ -1,0 +1,13 @@
+[build]
+  # Reconstruit le site à chaque modification dans l'admin
+  command = "pip install pyyaml --quiet && python3 build.py"
+  publish = "build"
+
+[build.environment]
+  PYTHON_VERSION = "3.11"
+
+# Redirige /admin vers l'interface d'administration
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200
