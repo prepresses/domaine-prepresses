@@ -39,6 +39,8 @@ amenities:
     icon: Linge fourni
   - label: Chaîne Hi-Fi
     icon: Lave-linge
+  - icon: Piscine (2)
+    label: Piscine
 adresse: 33 rue du Grand Couvent, 30000 Nîmes
 points:
   - Les Halles — 2 min
@@ -56,6 +58,7 @@ photos:
   - uploads/denim-5.jpg
   - uploads/denim-6.jpg
   - uploads/denim-7.jpg
+  - /uploads/award-denim-2022.png
 ---
 Découvrez l'atmosphère unique du centre ville d'une ville méditerranéenne en séjournant dans ce bel appartement tout juste rénové.
 
