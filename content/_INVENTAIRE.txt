@@ -1,0 +1,18 @@
+CONTENU RÉCUPÉRÉ DU SITE ACTUEL — Domaine des Prépresses
+=========================================================
+Chaque fiche = 1 fichier .md éditable (texte) + ses photos dans /uploads/
+
+8 fiches propriétés :
+  denim, garance, oslo (Nîmes)
+  maitre, vendangeurs, campagne, mas (Beaucaire)
+  angles (Les Angles)
+
+Pour chaque fiche, champs éditables :
+  - nom, pôle, accroche
+  - 4 specs (voyageurs / chambres / stat / atout)
+  - liste d'équipements
+  - adresse + points d'intérêt (— temps)
+  - texte de description
+  - photos (7 par fiche actuellement)
+
+Photos : 56 fichiers .jpg dans /uploads/ (7 par fiche)
