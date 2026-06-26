@@ -43,6 +43,8 @@ amenities:
     label: Trampoline
   - icon: Canapé
     label: fauteuil massant
+  - icon: Piscine
+    label: Jacuzzi
 adresse: 31 rue du Grand Couvent, 30000 Nîmes
 points:
   - Les Halles — 3 min
