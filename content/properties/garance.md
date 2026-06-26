@@ -41,6 +41,8 @@ amenities:
     icon: TV
   - icon: Défaut
     label: Trampoline
+  - icon: Canapé
+    label: fauteuil massant
 adresse: 31 rue du Grand Couvent, 30000 Nîmes
 points:
   - Les Halles — 3 min
