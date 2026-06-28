@@ -55,7 +55,7 @@ disclaimer: Localisation indicative du secteur — l'adresse exacte est
   communiquée à la réservation.
 photos:
   - uploads/garance-1.jpg
-  - /uploads/image1.png
+  - /uploads/borat-mankini-vert.jpg
   - uploads/garance-2.jpg
   - uploads/garance-3.jpg
   - uploads/garance-4.jpg
