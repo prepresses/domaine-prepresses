@@ -23,7 +23,26 @@ footer .lg{height:24px;margin-bottom:16px}
 footer .links{display:flex;gap:24px;justify-content:center;font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin:14px 0;flex-wrap:wrap}
 footer .links a{color:var(--pierre)}footer .links a:hover{color:var(--creme)}
 footer .fine{font-size:11px;opacity:.6;margin-top:12px}
-@media(max-width:880px){.nav-links{display:none}}
+.nav-toggle{display:none;flex-direction:column;justify-content:center;gap:4px;width:36px;height:36px;border:none;background:none;cursor:pointer;padding:7px}
+.nav-toggle span{display:block;height:2px;width:100%;background:var(--encre);border-radius:2px;transition:.25s}
+.nav-toggle.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.nav-toggle.open span:nth-child(2){opacity:0}
+.nav-toggle.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+@media(max-width:880px){
+ .nav-links{position:fixed;top:72px;left:0;right:0;flex-direction:column;gap:0;background:var(--creme);border-bottom:1px solid var(--ligne);padding:6px 0 10px;display:none;box-shadow:0 16px 30px rgba(35,36,30,.13)}
+ .nav-links.open{display:flex}
+ .nav-links>a,.nav-drop>a{padding:13px 36px}
+ .nav-drop{position:static}
+ .nav-drop .drop{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;background:transparent;padding:0 0 4px 18px;min-width:0}
+ .nav-drop .drop a{padding:7px 18px}
+ .nav-toggle{display:flex;margin-left:auto}
+ .nav-in{gap:10px;padding:0 18px}
+ .nav-in .house{display:none}
+ .nav-in .lg{height:21px}
+ .nav-cta{display:none}
+ .lang-pill{margin-left:4px;padding:5px 7px;font-size:11px}
+}
+@media(max-width:430px){.nav-in .lg{height:19px}}
 
 /* hero home */
 .hero{text-align:center;padding:64px 0 26px;animation:fade 1s ease}
@@ -142,7 +161,7 @@ a.cta{text-decoration:none}.soon-h{font-family:'Cormorant Garamond';font-size:24
 </style><link rel="alternate" hreflang="fr" href="https://domainedesprepresses.fr/guides.html"><link rel="alternate" hreflang="en" href="https://domainedesprepresses.fr/en/guides.html"><link rel="alternate" hreflang="x-default" href="https://domainedesprepresses.fr/guides.html"><meta name="description" content="Guides de séjour du Domaine des Prépresses : Nîmes, patrimoine romain, Avignon, Camargue, terroir, famille."></head><body><nav><div class="nav-in">
  <a href="index.html" class="brand"><img class="house" src="/img/4a26b88bf72b2a.png" alt=""><img class="lg" src="/img/1f582de757e082.png" alt="Domaine des Prépresses"></a>
  <div class="nav-links"><div class="nav-drop"><a href="index.html#lieux">Nos lieux</a><div class="drop"><a href="index.html#nimes">Nîmes</a><a href="index.html#beaucaire">Beaucaire</a><a href="index.html#angles">Les Angles</a></div></div><a href="histoire.html">Notre histoire</a><a href="guides.html">Guides</a><a href="index.html#direct">En direct</a><a href="index.html#contact">Contact</a></div>
- <a href="index.html#book" class="nav-cta">Réserver</a><div class="lang-pill"><span class="on">FR</span><i>/</i><a href="en/guides.html" hreflang="en">EN</a></div>
+ <a href="index.html#book" class="nav-cta">Réserver</a><button class="nav-toggle" aria-label="Ouvrir le menu" onclick="this.classList.toggle('open');var n=document.querySelector('.nav-links');if(n)n.classList.toggle('open')"><span></span><span></span><span></span></button><div class="lang-pill"><span class="on">FR</span><i>/</i><a href="en/guides.html" hreflang="en">EN</a></div>
 </div></nav><div class="wrap"><div class="gidx"><span class="eyebrow">Préparez votre séjour</span><h1>Nos guides</h1><p class="intro">Que voir, que faire, où manger — nos conseils d'habitués autour de chaque maison.</p><div class="gg"><a href="guide-nimes.html"><img class="thumb" src="/img/181162b755e0d6.jpg" alt=""><div class="gtx"><b>Nîmes, guide de la ville</b><p>Romaine jusqu'au bout des pierres, élégante et gourmande, Nîmes se visite à pied — et c'est tout…</p><span class="ideal">Idéal : Denim · Garance · Oslo</span></div></a><a href="guide-historique.html"><img class="thumb" src="/img/aa8e235471dfd6.jpg" alt=""><div class="gtx"><b>Patrimoine romain & visites historiques</b><p>Entre Nîmes, le Pont du Gard et la vallée du Rhône, vous êtes au cœur de la Provence romaine — l…</p><span class="ideal">Idéal : Nîmes & le Mas</span></div></a><a href="guide-avignon.html"><img class="thumb" src="/img/bcc5938cd52269.jpg" alt=""><div class="gtx"><b>Avignon & les coteaux</b><p>Depuis Les Angles, vous êtes face à Avignon, de l'autre côté du Rhône : la cité des Papes à cinq…</p><span class="ideal">Idéal : Les Angles</span></div></a><a href="guide-camargue.html"><img class="thumb" src="/img/6dcd85d596160d.jpg" alt=""><div class="gtx"><b>La Camargue</b><p>Grands espaces, chevaux blancs, taureaux noirs et flamants roses : la Camargue, plus grand delta…</p><span class="ideal">Idéal : Le Mas · Les Angles</span></div></a><a href="guide-saveurs.html"><img class="thumb" src="/img/ffdcaacd019b77.jpg" alt=""><div class="gtx"><b>Saveurs & terroir</b><p>Huile d'olive, vins de soleil, marchés provençaux : ici, la table fait partie du voyage.…</p><span class="ideal">Idéal : Tout le domaine</span></div></a><a href="guide-famille.html"><img class="thumb" src="/img/0dbe0d504aee5e.jpg" alt=""><div class="gtx"><b>En famille en Provence</b><p>Le Mas des Prépresses est pensé pour les familles : grand parc clos, piscine, vélos, et de la pl…</p><span class="ideal">Idéal : Le Mas (Beaucaire)</span></div></a><a href="guide-plein-air.html"><img class="thumb" src="/img/c27baeadef51bc.jpg" alt=""><div class="gtx"><b>Plein air & sport</b><p>Randonnée, canoë, via ferrata, vélo : la Provence pour ceux qui n'aiment pas rester assis.</p><span class="ideal">Idéal : Le Mas · Les Angles</span></div></a></div></div></div><footer id="contact"><img class="lg" src="/img/f7a19baef2d7d5.png" alt="Domaine des Prépresses">
  <div class="links"><a href="index.html#lieux">Nos lieux</a><a href="histoire.html">Notre histoire</a><a href="index.html#contact">Contact</a><a href="cgv.html">CGV</a><a href="mentions-legales.html">Mentions légales</a></div>
  <div class="fine">Maisons &amp; appartements de caractère en Provence · Nîmes — Beaucaire — Avignon<br>© 2026 Domaine des Prépresses — maquette de travail</div></footer></body></html>

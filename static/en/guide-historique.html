@@ -23,7 +23,26 @@ footer .lg{height:24px;margin-bottom:16px}
 footer .links{display:flex;gap:24px;justify-content:center;font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin:14px 0;flex-wrap:wrap}
 footer .links a{color:var(--pierre)}footer .links a:hover{color:var(--creme)}
 footer .fine{font-size:11px;opacity:.6;margin-top:12px}
-@media(max-width:880px){.nav-links{display:none}}
+.nav-toggle{display:none;flex-direction:column;justify-content:center;gap:4px;width:36px;height:36px;border:none;background:none;cursor:pointer;padding:7px}
+.nav-toggle span{display:block;height:2px;width:100%;background:var(--encre);border-radius:2px;transition:.25s}
+.nav-toggle.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.nav-toggle.open span:nth-child(2){opacity:0}
+.nav-toggle.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+@media(max-width:880px){
+ .nav-links{position:fixed;top:72px;left:0;right:0;flex-direction:column;gap:0;background:var(--creme);border-bottom:1px solid var(--ligne);padding:6px 0 10px;display:none;box-shadow:0 16px 30px rgba(35,36,30,.13)}
+ .nav-links.open{display:flex}
+ .nav-links>a,.nav-drop>a{padding:13px 36px}
+ .nav-drop{position:static}
+ .nav-drop .drop{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;background:transparent;padding:0 0 4px 18px;min-width:0}
+ .nav-drop .drop a{padding:7px 18px}
+ .nav-toggle{display:flex;margin-left:auto}
+ .nav-in{gap:10px;padding:0 18px}
+ .nav-in .house{display:none}
+ .nav-in .lg{height:21px}
+ .nav-cta{display:none}
+ .lang-pill{margin-left:4px;padding:5px 7px;font-size:11px}
+}
+@media(max-width:430px){.nav-in .lg{height:19px}}
 
 /* hero home */
 .hero{text-align:center;padding:64px 0 26px;animation:fade 1s ease}
@@ -142,7 +161,7 @@ a.cta{text-decoration:none}.soon-h{font-family:'Cormorant Garamond';font-size:24
 </style><link rel="alternate" hreflang="fr" href="https://domainedesprepresses.fr/guide-historique.html"><link rel="alternate" hreflang="en" href="https://domainedesprepresses.fr/en/guide-historique.html"><link rel="alternate" hreflang="x-default" href="https://domainedesprepresses.fr/guide-historique.html"><meta name="description" content="Pont du Gard, Nîmes, Arles, Glanum, Montmajour: the complete guide to Roman and medieval Provence around our houses. One-day itineraries, local tips and practical info."></head><body><nav><div class="nav-in">
  <a href="index.html" class="brand"><img class="house" src="/img/4a26b88bf72b2a.png" alt=""><img class="lg" src="/img/1f582de757e082.png" alt="Domaine des Prépresses"></a>
  <div class="nav-links"><div class="nav-drop"><a href="index.html#lieux">Our places</a><div class="drop"><a href="index.html#nimes">Nîmes</a><a href="index.html#beaucaire">Beaucaire</a><a href="index.html#angles">Les Angles</a></div></div><a href="histoire.html">Our story</a><a href="guides.html">Guides</a><a href="index.html#direct">Book direct</a><a href="index.html#contact">Contact</a></div>
- <a href="index.html#book" class="nav-cta">Book</a><div class="lang-pill"><a href="../guide-historique.html" hreflang="fr">FR</a><i>/</i><span class="on">EN</span></div>
+ <a href="index.html#book" class="nav-cta">Book</a><button class="nav-toggle" aria-label="Ouvrir le menu" onclick="this.classList.toggle('open');var n=document.querySelector('.nav-links');if(n)n.classList.toggle('open')"><span></span><span></span><span></span></button><div class="lang-pill"><a href="../guide-historique.html" hreflang="fr">FR</a><i>/</i><span class="on">EN</span></div>
 </div></nav><div class="wrap"><div class="guide"><span class="eyebrow">Heritage guide</span>
 <h1>Roman Provence: What to See near Nîmes</h1>
 <p class="intro">Between Nîmes, the Pont du Gard and the Rhône valley, you're staying in the heart of one of Europe's richest concentrations of ancient monuments — a place where, in twenty minutes by car, you go from a Roman amphitheatre still in use to an abbey carved straight into the rock.</p>
