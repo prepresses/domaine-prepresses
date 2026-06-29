@@ -149,6 +149,9 @@ def build():
             'POLE': esc(d.get('pole', '')),
             'SPECS': render_specs(d.get('specs', [])),
             'GALLERY': render_gallery(d.get('photos', [])),
+            'CTA': ('<div class="fhero-cta"><a href="#book" class="cta-resa">Réserver — voir les disponibilités</a></div>'
+                    if int(d.get('beds24_propid', 0)) in ACTIVE
+                    else '<div class="fhero-cta"><a href="#book" class="cta-resa cta-soft">Réservation — nous contacter</a></div>'),
             'LEAD': lead,
             'PROSE': prose,
             'AMENITIES': render_amenities(d.get('amenities', [])),
