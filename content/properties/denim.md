@@ -39,8 +39,6 @@ amenities:
     icon: Linge fourni
   - label: Chaîne Hi-Fi
     icon: Lave-linge
-  - icon: Piscine (2)
-    label: Piscine
 adresse: 33 rue du Grand Couvent, 30000 Nîmes
 points:
   - Les Halles — 2 min
