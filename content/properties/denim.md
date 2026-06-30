@@ -39,7 +39,7 @@ amenities:
     icon: Linge fourni
   - label: Chaîne Hi-Fi
     icon: Lave-linge
-adresse: 33 rue du Grand Couvent, 30000 Nîmes
+adresse: " rue du Grand Couvent, 30000 Nîmes"
 points:
   - Les Halles — 2 min
   - Arènes de Nîmes — 5 min
