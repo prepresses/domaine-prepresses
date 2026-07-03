@@ -18,6 +18,97 @@ CONTACT = open(os.path.join(ROOT, 'booking_contact.html'), encoding='utf-8').rea
 
 ACTIVE = {67356, 66303, 137400}  # Nîmes : réservation en ligne active
 
+# ============================================================================
+#  WhatsApp : pastille flottante (toutes pages) + bloc contact (accueils FR/EN)
+#  Injecté au build -> rien à lancer en local, Netlify s'en charge.
+# ============================================================================
+WA_INTL    = "33669325385"      # numéro international sans le +
+WA_DISPLAY = "06 69 32 53 85"   # affichage
+WA_LINK    = f"https://wa.me/{WA_INTL}"
+TEL_LINK   = f"tel:+{WA_INTL}"
+
+WA_GLYPH = ('M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.34 4.96L2 22l5.2-1.36'
+            'c1.46.8 3.1 1.22 4.76 1.22h.01c5.5 0 9.96-4.46 9.96-9.96 0-2.66-1.04-5.16-2.92-7.04'
+            'A9.9 9.9 0 0 0 12 2.04zm5.84 14.06c-.25.7-1.44 1.33-1.99 1.41-.53.08-1.17.11-1.89-.12'
+            '-.44-.14-1-.33-1.72-.64-3.03-1.31-5-4.36-5.16-4.56-.15-.2-1.23-1.63-1.23-3.11s.78-2.21'
+            ' 1.05-2.51c.28-.3.6-.38.8-.38.2 0 .4 0 .57.01.18.01.43-.07.67.51.25.6.85 2.08.92 2.23'
+            '.08.15.12.32.02.52-.1.2-.15.32-.3.5-.15.18-.31.4-.44.53-.15.15-.3.31-.13.6.17.3.76 1.25'
+            ' 1.63 2.02 1.12.99 2.06 1.3 2.36 1.45.3.15.47.12.64-.07.18-.2.74-.86.94-1.16.2-.3.4-.25'
+            '.67-.15.28.1 1.75.83 2.05.98.3.15.5.22.57.35.08.13.08.74-.17 1.44z')
+PHONE_GLYPH = ('M6.62 10.79a15.5 15.5 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.03-.24 11.4 11.4 0 0 0'
+               ' 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0'
+               ' 1 1 1c0 1.24.2 2.44.57 3.57a1 1 0 0 1-.24 1.03l-2.21 2.19z')
+
+WA_FAB = f'''<!-- wa-fab -->
+<style>
+.wa-fab{{position:fixed;right:18px;bottom:18px;z-index:900;width:56px;height:56px;border-radius:50%;
+ background:#25D366;display:flex;align-items:center;justify-content:center;
+ box-shadow:0 6px 20px rgba(0,0,0,.25);transition:transform .18s,box-shadow .18s}}
+.wa-fab:hover{{transform:translateY(-2px) scale(1.05);box-shadow:0 10px 26px rgba(0,0,0,.32)}}
+.wa-fab svg{{width:32px;height:32px;fill:#fff}}
+@media(max-width:600px){{.wa-fab{{right:14px;bottom:14px;width:52px;height:52px}}.wa-fab svg{{width:30px;height:30px}}}}
+</style>
+<a class="wa-fab" href="{WA_LINK}" target="_blank" rel="noopener" aria-label="Contact WhatsApp" title="WhatsApp">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="{WA_GLYPH}"/></svg></a>
+'''
+
+WA_CONTACT_CSS = '''<!-- wa-contact -->
+<style>
+.wa-contact{margin-top:22px;padding-top:20px;border-top:1px solid var(--ligne,#e5dfd2);text-align:center}
+.wa-contact .wa-or{display:block;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+ color:var(--soft,#8a8272);margin-bottom:12px}
+.wa-contact .wa-links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.wa-contact a{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:4px;
+ font-size:14px;text-decoration:none;transition:.18s;border:1px solid transparent}
+.wa-contact .wa-line{background:#25D366;color:#fff}
+.wa-contact .wa-line:hover{background:#1eba57}
+.wa-contact .wa-line svg{width:18px;height:18px;fill:#fff}
+.wa-contact .tel-line{background:transparent;color:var(--olivier,#5E6B45);border-color:var(--pierre,#B8AE99)}
+.wa-contact .tel-line:hover{border-color:var(--olivier,#5E6B45);background:var(--creme,#F4F0E7)}
+.wa-contact .tel-line svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.7}
+</style>
+'''
+
+def wa_contact_block(lang):
+    wa_label  = f"WhatsApp · {WA_DISPLAY}"
+    tel_label = ("Appeler · " if lang == "FR" else "Call · ") + WA_DISPLAY
+    intro     = "Ou contactez-nous directement" if lang == "FR" else "Or reach us directly"
+    return (WA_CONTACT_CSS +
+            f'<div class="wa-contact"><span class="wa-or">{intro}</span><div class="wa-links">'
+            f'<a class="wa-line" href="{WA_LINK}" target="_blank" rel="noopener">'
+            f'<svg viewBox="0 0 24 24"><path d="{WA_GLYPH}"/></svg>{wa_label}</a>'
+            f'<a class="tel-line" href="{TEL_LINK}">'
+            f'<svg viewBox="0 0 24 24"><path d="{PHONE_GLYPH}"/></svg>{tel_label}</a>'
+            f'</div></div>\n')
+
+def _inject_before(html, tag, snippet):
+    i = html.lower().rfind(tag)
+    return html[:i] + snippet + html[i:] if i != -1 else html + snippet
+
+def inject_whatsapp():
+    """Passe finale sur build/ : pastille partout + bloc contact sous les 2 formulaires."""
+    n_fab = n_ct = 0
+    for dp, _, files in os.walk(OUT):
+        for f in files:
+            if not f.endswith('.html'):
+                continue
+            p = os.path.join(dp, f)
+            html = open(p, encoding='utf-8').read()
+            changed = False
+            # bloc contact sous le formulaire des accueils (index.html à la racine et /en/)
+            rel = os.path.relpath(p, OUT).replace('\\', '/')
+            if rel in ('index.html', 'en/index.html') and '<!-- wa-contact -->' not in html and '</form>' in html:
+                lang = 'EN' if rel.startswith('en/') else 'FR'
+                html = html.replace('</form>', '</form>\n' + wa_contact_block(lang), 1)
+                changed = True; n_ct += 1
+            # pastille flottante sur toutes les pages
+            if '<!-- wa-fab -->' not in html:
+                html = _inject_before(html, '</body>', WA_FAB)
+                changed = True; n_fab += 1
+            if changed:
+                open(p, 'w', encoding='utf-8').write(html)
+    print('  WhatsApp : %d pastilles, %d blocs contact' % (n_fab, n_ct))
+
 def parse_md(path):
     txt = open(path, encoding='utf-8').read()
     m = re.match(r'^---\n(.*?)\n---\n?(.*)$', txt, re.S)
@@ -169,6 +260,8 @@ def build():
         html = html.replace('{{ACCENT}}', d.get('accent', '#5E6B45'))
         open(os.path.join(OUT, d['slug'] + '.html'), 'w', encoding='utf-8').write(html)
         done.append((d['slug'], len(d.get('photos', [])), len(d.get('amenities', [])), int(d.get('beds24_propid', 0)) in ACTIVE))
+    # 5. WhatsApp : pastille sur toutes les pages + bloc contact sous les formulaires
+    inject_whatsapp()
     return done
 
 if __name__ == '__main__':
