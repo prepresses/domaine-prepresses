@@ -39,17 +39,14 @@ amenities:
     icon: Linge fourni
   - label: Chaîne Hi-Fi
     icon: Lave-linge
-  - icon: Piscine (2)
-    label: Piscine
-adresse: 33 rue du Grand Couvent, 30000 Nîmes
+adresse: " rue du Grand Couvent, 30000 Nîmes"
 points:
   - Les Halles — 2 min
   - Arènes de Nîmes — 5 min
   - Maison Carrée — 5 min
   - Gare SNCF — 12 min
   - Jardins de la Fontaine — 5 min
-disclaimer: Localisation indicative du secteur — l'adresse exacte est
-  communiquée à la réservation.
+disclaimer: ""
 photos:
   - uploads/denim-1.jpg
   - uploads/denim-2.jpg
@@ -79,7 +76,6 @@ Vous profiterez :
 
 L'appartement est situé dans un petit immeuble au calme au 1er étage sans ascenseur. Il donne sur une rue piétonne dans le centre ville de Nîmes. On peut tout visiter à pieds.
 
-* Ménage : 30 € à régler sur place.
 * Nombreux stationnements possibles à 2 mn à pieds gratuits ou payants (45€/sem, 18€/24h).
 * Bus à 50 m ligne 10, tramway T1 arrêt Gambetta Coupole
 * Nous acceptons les chèques vacances.
