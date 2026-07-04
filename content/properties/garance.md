@@ -4,7 +4,7 @@ accent: "#A23B2F"
 beds24_propid: 66303
 pole: Nîmes
 name: Garance
-tagline: Le bleu de Nîmes, en duplex.
+tagline: Le grand confort en duplex.
 specs:
   - 6 voyageurs
   - 2 chambres
@@ -17,7 +17,7 @@ amenities:
     icon: Wifi
   - label: Cuisine équipée
     icon: Cuisine
-  - label: TV écran plat
+  - label: "Smart TV écran plat "
     icon: TV
   - label: 1 salle d'eau
     icon: Salle d'eau
