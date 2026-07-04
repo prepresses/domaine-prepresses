@@ -47,8 +47,7 @@ points:
   - Tarascon — 12 min
   - Avignon — 25 min
   - Arles — 25 min
-disclaimer: Localisation indicative du secteur — l'adresse exacte est
-  communiquée à la réservation.
+disclaimer: ""
 photos:
   - uploads/campagne-1.jpg
   - uploads/campagne-2.jpg
