@@ -93,7 +93,7 @@ Table de ping-pong
 
 Trampoline
 
- vélos
+ Vélos
 
 🛏 Draps et serviettes de toilette inclus (prévoir serviettes de piscine)
 
