@@ -45,8 +45,7 @@ points:
   - Arènes de Nîmes — 6 min
   - Maison Carrée — 5 min
   - Gare SNCF — 12 min
-disclaimer: Localisation indicative du secteur — l'adresse exacte est
-  communiquée à la réservation.
+disclaimer: ""
 photos:
   - uploads/garance-1.jpg
   - /uploads/borat-mankini-vert.jpg
