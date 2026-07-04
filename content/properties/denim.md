@@ -48,8 +48,8 @@ points:
   - Jardins de la Fontaine — 5 min
 disclaimer: ""
 photos:
-  - uploads/denim-1.jpg
   - uploads/denim-2.jpg
+  - uploads/denim-1.jpg
   - uploads/denim-3.jpg
   - uploads/denim-4.jpg
   - uploads/denim-5.jpg
