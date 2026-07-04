@@ -109,6 +109,79 @@ def inject_whatsapp():
                 open(p, 'w', encoding='utf-8').write(html)
     print('  WhatsApp : %d pastilles, %d blocs contact' % (n_fab, n_ct))
 
+# ============================================================================
+#  Traduction auto FR -> EN du descriptif (DeepL) + cache
+#  - clé API dans la variable d'environnement DEEPL_API_KEY
+#  - cache dans translations_cache.json (ne retraduit que si le FR a changé)
+#  - fallback : si pas de clé ou DeepL indisponible, on garde l'EN existant
+# ============================================================================
+import urllib.request, hashlib
+
+DEEPL_KEY   = os.environ.get('DEEPL_API_KEY', '').strip()
+CACHE_PATH  = os.path.join(ROOT, 'translations_cache.json')
+DESC_RE     = re.compile(r'<p class="lead">.*?</p>\s*<div class="prose">.*?</div>', re.S)
+
+def _load_cache():
+    try:    return json.load(open(CACHE_PATH, encoding='utf-8'))
+    except Exception: return {}
+
+def _save_cache(c):
+    try:    json.dump(c, open(CACHE_PATH, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    except Exception as e: print('  ! cache non écrit :', e)
+
+def _deepl_batch(paras):
+    """Traduit une liste de paragraphes FR -> EN en un seul appel. None si échec."""
+    if not DEEPL_KEY:
+        return None
+    endpoint = ('https://api-free.deepl.com/v2/translate' if DEEPL_KEY.endswith(':fx')
+                else 'https://api.deepl.com/v2/translate')
+    fields = [('text', p) for p in paras] + [
+        ('source_lang', 'FR'), ('target_lang', 'EN-GB'), ('preserve_formatting', '1')]
+    data = urllib.parse.urlencode(fields).encode()
+    req = urllib.request.Request(endpoint, data=data,
+          headers={'Authorization': f'DeepL-Auth-Key {DEEPL_KEY}'})
+    try:
+        with urllib.request.urlopen(req, timeout=25) as r:
+            j = json.load(r)
+        return [t['text'] for t in j['translations']]
+    except Exception as e:
+        print('  ! DeepL indisponible :', e)
+        return None
+
+def translate_body(fr_text, cache):
+    """Renvoie l'EN (cache si dispo, sinon DeepL). None si échec -> fallback appelant."""
+    key = hashlib.sha1(fr_text.encode('utf-8')).hexdigest()
+    if key in cache:
+        return cache[key]
+    paras = fr_text.split('\n\n')
+    out = _deepl_batch(paras)
+    if not out or len(out) != len(paras):
+        return None
+    en = '\n\n'.join(out)
+    cache[key] = en
+    return en
+
+def translate_en_descriptions(fr_bodies):
+    """Remplace le descriptif des fiches EN par la traduction du body FR courant."""
+    cache = _load_cache()
+    n_ok = n_skip = n_fail = 0
+    for slug, fr_body in fr_bodies.items():
+        p = os.path.join(OUT, 'en', slug + '.html')
+        if not os.path.isfile(p):
+            continue
+        html = open(p, encoding='utf-8').read()
+        if not DESC_RE.search(html):
+            continue
+        en = translate_body(fr_body, cache)
+        if not en:                       # pas de clé / DeepL down -> on garde l'EN figé
+            n_fail += 1; continue
+        lead, prose = render_desc(en)
+        html = DESC_RE.sub(lambda _: lead + prose, html, count=1)
+        open(p, 'w', encoding='utf-8').write(html)
+        n_ok += 1
+    _save_cache(cache)
+    print('  Traduction EN : %d traduites, %d inchangées (fallback)' % (n_ok, n_fail))
+
 def parse_md(path):
     txt = open(path, encoding='utf-8').read()
     m = re.match(r'^---\n(.*?)\n---\n?(.*)$', txt, re.S)
@@ -228,9 +301,11 @@ def build():
         shutil.copytree(ADMIN, os.path.join(OUT, 'admin'))
     # 4. fiches générées depuis le contenu
     done = []
+    fr_bodies = {}
     for fn in sorted(os.listdir(PROPDIR)):
         if not fn.endswith('.md'): continue
         d = parse_md(os.path.join(PROPDIR, fn))
+        fr_bodies[d['slug']] = d['description']
         lead, prose = render_desc(d['description'])
         html = TEMPLATE
         repl = {
@@ -260,7 +335,9 @@ def build():
         html = html.replace('{{ACCENT}}', d.get('accent', '#5E6B45'))
         open(os.path.join(OUT, d['slug'] + '.html'), 'w', encoding='utf-8').write(html)
         done.append((d['slug'], len(d.get('photos', [])), len(d.get('amenities', [])), int(d.get('beds24_propid', 0)) in ACTIVE))
-    # 5. WhatsApp : pastille sur toutes les pages + bloc contact sous les formulaires
+    # 5. Traduction auto du descriptif EN (DeepL) sur les fiches de build/en/
+    translate_en_descriptions(fr_bodies)
+    # 6. WhatsApp : pastille sur toutes les pages + bloc contact sous les formulaires
     inject_whatsapp()
     return done
 
