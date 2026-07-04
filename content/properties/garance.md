@@ -39,7 +39,7 @@ amenities:
     icon: Lave-vaisselle
   - label: Smart TV 146 cm
     icon: TV
-adresse: 31 rue du Grand Couvent, 30000 Nîmes
+adresse: rue du Grand Couvent, 30000 Nîmes
 points:
   - Les Halles — 3 min
   - Arènes de Nîmes — 6 min
