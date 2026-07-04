@@ -62,7 +62,6 @@ Le logement
 • Patio et terrasse extérieure, plancha (en remplacement du barbecue), chaises longues. Aucun vis à vis
 • 2 vélos avec antivol à disposition gratuite
 • Draps et serviettes fournis, shampooing/savon ne sont pas fournis
-• Ménage : 30 € à régler sur place.
 • Stationnement facile et gratuit devant la maison, tous commerces à proximité
 • Lit et chaise bébé à disposition gratuite
 
