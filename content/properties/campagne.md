@@ -57,8 +57,8 @@ photos:
   - uploads/campagne-6.jpg
   - uploads/campagne-7.jpg
 ---
-Bienvenue au Mas des Prépresses – Maison de Campagne avec vue et piscine 🌞
-Venez vous ressourcer dans une maison de caractère nichée au cœur d’un mas authentique, entouré de majestueux platanes centenaires, avec une vue imprenable sur la campagne provençale.
+ 
+Venez vous ressourcer dans une maison de caractère nichée au cœur d’un mas authentique, entouré de majestueux platanes centenaires, avec une vue imprenable sur la campagne provençale 🌞
 
 Idéalement situé pour découvrir les trésors de la région : Pont du Gard, Uzès, Avignon, Arles, Nîmes, Saint-Rémy-de-Provence, Les Baux, la Camargue et les plages des Saintes-Maries-de-la-Mer !
 
@@ -103,11 +103,5 @@ Table de ping-pong
 Trampoline, vélos
 
 🛏 Draps et serviettes de toilette inclus (prévoir serviettes de piscine)
-🧹 Ménage : 40 € à régler à l’arrivée
 🎫 Chèques vacances acceptés
 🔑 Accès autonome via boîte à clés
-
-🔍 Le logement est complet ? Cliquez sur notre photo de profil pour découvrir nos autres maisons disponibles au Mas (jusqu’à 20 pers)
-
-Accès des voyageurs
-Accés par boîte à clés
