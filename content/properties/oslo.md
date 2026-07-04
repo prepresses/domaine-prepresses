@@ -44,8 +44,8 @@ points:
   - Arènes — 15 min
 disclaimer: ""
 photos:
-  - uploads/oslo-1.jpg
   - uploads/oslo-2.jpg
+  - uploads/oslo-1.jpg
   - uploads/oslo-3.jpg
   - uploads/oslo-4.jpg
   - uploads/oslo-5.jpg
