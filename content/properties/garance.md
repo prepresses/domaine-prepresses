@@ -56,36 +56,21 @@ photos:
 ---
 # À propos de ce logement
 
-Découvrez l'atmosphère Idéalement situé pour tout faire à pieds, ce superbe duplex de 80m² est très calme, lumineux et dispose de la climatisation.
+Idéalement situé pour tout faire à pieds, ce superbe duplex de 80m² est très calme, lumineux et dispose de la climatisation.
 
-SI LE LOGEMENT EST COMPLET, SVP CLIQUEZ SUR NOTRE PROFIL AIRBNB (CLIQUEZ SUR NOTRE PHOTO DE PROFIL) POUR DECOUVRIR NOS AUTRES SUPERBES HEBERGEMENTS.
-
-Le logement
 Situé à 2 mn à pieds du marché couvert des Halles (produits frais de qualité, quotidien), du centre commercial La Coupole, des magnifiques jardins de la fontaine, de la maison carrée, etc.
 A 5 mn à pieds des Arènes, du nouveau musée de la romanité.
 A 12 mn à pieds de la gare ferroviaire. Nombreux stationnements possibles.
 
 Vous profiterez:
 
-* d'un grand salon lumineux avec tv écran plat 126 cm, internet WiFi, une chaîne Hi Fi avec cable jack pour pouvoir écouter votre musique, d'une cuisine très bien équipée. Les amateurs de café trouveront une cafetière Nescafé Dolce Gusto + une cafetière à filtre.
+* d'un grand salon lumineux avec tv écran plat 146 cm, internet WiFi, une chaîne Hi Fi avec cable jack pour pouvoir écouter votre musique, d'une cuisine très bien équipée. Les amateurs de café trouveront une cafetière Nescafé Dolce Gusto + une cafetière à filtre.
   Le canapé est convertible (neuf & très confortable) pour les 5ème et 6ème personnes.
-* A l'étage, 2 chambres avec rangements, literie de qualité avec couettes (lits 160x200 et 90x200 jumelables). Salle de bain avec une spacieuse douche à l'italienne, un sèche serviettes, un sèche cheveux etc. WC séparé. Draps, serviettes et linge de maison inclus. Shampoing/savon non fournis.
-
-\-Ménage : 35 € à régler sur place.
-
+* A l'étage, 2 chambres avec rangements, literie de qualité avec couettes (lits 160x200 et 90x200 jumelables). Salle de bain avec une spacieuse douche à l'italienne, un sèche serviettes, un sèche cheveux etc. WC séparé. Draps, serviettes et linge de maison inclus. 
 * Nombreux stationnements possibles à 2 mn à pieds gratuits ou payants (45€/sem, 18€/24h).
 * Bus à 50 m ligne 10, tramway T1 arrêt Gambetta.
 * Chèques vacances acceptés.
 
-L'appartement est situé dans un petit immeuble au calme au 2 ème étage sans ascenseur. Il offre une vue dégagée et donne sur une rue piétonne dans le centre ville de Nîmes. On peut tout visiter à pieds.
 
-Accès des voyageurs
-Les voyageurs ont accès à la totalité de l'appartement
 Arrivée autonome, arrivée/départ tardif ou matinal possible
 Situé au 2 ème étage sans ascenseur dans une ruelle piétonne (possibilité de garer temporairement la voiture à 20 mètres pour décharger).
-
-Autres remarques
-L'appartement est climatisé.
-
-Détails de l'enregistrement
-30189000282RI
