@@ -85,5 +85,7 @@ Les voyageurs ont accès à la totalité de l'appartement
 Arrivée autonome, arrivée/départ tardif ou matinal possible
 Situé au 1er étage sans ascenseur dans une ruelle piétonne (possibilité de garer temporairement la voiture à 20 mètres pour décharger).
 
+Ceci est un test de traduction en anglais : la grosse bite à dudulle
+
 Détails de l'enregistrement
 30189000281N8
