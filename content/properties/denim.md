@@ -4,7 +4,7 @@ accent: "#2E4A6B"
 beds24_propid: 67356
 pole: Nîmes
 name: Denim
-tagline: Le cocon indigo, au cœur de Nîmes.
+tagline: Le cocon, au cœur de Nîmes.
 specs:
   - 3 voyageurs
   - 1 chambre
@@ -58,11 +58,11 @@ photos:
   - /uploads/appartement-nîmes-26.jpg
   - /uploads/award-denim-2022.png
 ---
-Découvrez l'atmosphère unique du centre ville d'une ville méditerranéenne en séjournant dans ce bel appartement tout juste rénové.
+Découvrez l'atmosphère unique du centre ville d'une ville méditerranéenne !
 
 Idéalement situé pour tout faire à pieds, ce cocon de 40m² est très confortable et calme (ruelle piétonne).
 
-Le logement
+
 Situé à 2 mn à pieds des halles de Nîmes et du centre commercial La Coupole, des magnifiques jardins de la fontaine, de la maison carrée, etc.
 A 5 mn à pieds des Arènes, du nouveau musée de la romanité.
 A 12 mn à pieds de la gare ferroviaire. Nombreux stationnements possibles.
@@ -72,18 +72,13 @@ Vous profiterez :
 * d'un séjour  avec tv écran plat 108cm, d'internet en WiFi, d'une chaîne Hi Fi avec cable jack pour pouvoir écouter votre musique, d'une cuisine très bien équipée avec lave linge, frigo, micro onde, four, plaques vitro céramiques etc. Les amateurs de café trouveront une cafetière à capsule Nescafé Dolce Gusto.
   Le canapé est convertible pour une 3 ème personne.
 * d'une chambre climatisée, lumineuse avec un grand lit de qualité de 160x200 cm ainsi que des rangements. Le lit est fait à l'arrivée (couette), le linge de maison est inclus (draps, 1 grande serviette/pers, essuie mains...).
-* d'une salle de bain avec une spacieuse douche à l'italienne, un sèche serviettes, un sèche cheveux etc. Shampoing/savon ne sont pas fournis.
+* d'une salle de bain avec une spacieuse douche à l'italienne, un sèche serviettes, un sèche cheveux etc. 
 
-L'appartement est situé dans un petit immeuble au calme au 1er étage sans ascenseur. Il donne sur une rue piétonne dans le centre ville de Nîmes. On peut tout visiter à pieds.
+L'appartement est situé dans un petit immeuble au 1er étage sans ascenseur. Il donne sur une rue piétonne dans le centre ville de Nîmes. On peut tout visiter à pieds.
 
 * Nombreux stationnements possibles à 2 mn à pieds gratuits ou payants (45€/sem, 18€/24h).
 * Bus à 50 m ligne 10, tramway T1 arrêt Gambetta Coupole
 * Nous acceptons les chèques vacances.
 
-Accès des voyageurs
-Les voyageurs ont accès à la totalité de l'appartement
-Arrivée autonome, arrivée/départ tardif ou matinal possible
-Situé au 1er étage sans ascenseur dans une ruelle piétonne (possibilité de garer temporairement la voiture à 20 mètres pour décharger).
 
-Détails de l'enregistrement
-30189000281N8
+  Arrivée autonome, arrivée/départ tardif ou matinal possible
