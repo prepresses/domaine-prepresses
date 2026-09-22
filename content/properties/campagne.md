@@ -43,13 +43,13 @@ amenities:
     icon: Barbecue
 adresse: Chemin du Mas de Pilet, 30300 Beaucaire
 points:
-  - Beaucaire — 10 min
+  - Beaucaire — 8 min
   - Tarascon — 12 min
   - Avignon — 25 min
   - Arles — 25 min
 disclaimer: ""
 photos:
-  - uploads/campagne-1.jpg
+  - /uploads/campagne-1.jpg
   - uploads/campagne-2.jpg
   - uploads/campagne-3.jpg
   - uploads/campagne-4.jpg
