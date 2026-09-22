@@ -8,7 +8,7 @@ tagline: Le mas, la campagne, le calme.
 specs:
   - 5 voyageurs
   - 2 chambres
-  - 1 piscine
+  - 1 piscine partagée
   - climatisation
 amenities:
   - label: Climatisation
