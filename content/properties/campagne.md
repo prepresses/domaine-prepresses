@@ -29,7 +29,7 @@ amenities:
     icon: Parking privé
   - label: Lave-vaisselle
     icon: Lave-vaisselle
-  - label: Smart TV
+  - label: TV
     icon: TV
   - label: Machine à café à filtre
     icon: Café
