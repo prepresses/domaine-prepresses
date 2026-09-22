@@ -63,7 +63,7 @@ Venez vous ressourcer dans une maison de caractère nichée au cœur d’un mas 
 Idéalement situé pour découvrir les trésors de la région : Pont du Gard, Uzès, Avignon, Arles, Nîmes, Saint-Rémy-de-Provence, Les Baux, la Camargue et les plages des Saintes-Maries-de-la-Mer !
 
 Le logement
-📍 À seulement 5 minutes de Beaucaire, charmante cité d’art et d’histoire avec port de plaisance, ruelles médiévales et tous les commerces nécessaires.
+📍 À seulement 8 minutes de Beaucaire, charmante cité d’art et d’histoire avec port de plaisance, ruelles médiévales et tous les commerces nécessaires.
 
 Cette maison de campagne, entièrement climatisée et chauffée en hiver, allie charme, confort et nature.
 
