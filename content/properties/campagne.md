@@ -44,7 +44,7 @@ amenities:
 adresse: Chemin du Mas de Pilet, 30300 Beaucaire
 points:
   - Beaucaire — 8 min
-  - Tarascon — 12 min
+  - Nimes — 20 min
   - Avignon — 25 min
   - Arles — 25 min
 disclaimer: ""
